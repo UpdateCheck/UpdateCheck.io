@@ -1,0 +1,20 @@
+{
+  "name": "UpdateCheck.io",
+  "version": "0.0.1",
+  "authors": [
+    "Adam Lavin <adam@lavoaster.co.uk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://updatecheck.io",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-animate": "~1.4.0",
+    "angular-aria": "~1.4.0",
+    "angular-material": "~0.9.7",
+    "angular-loader": "~1.4.0",
+    "ui-router": "~0.2.15",
+    "font-awesome": "~4.3.0",
+    "angular-material-source": "git://github.com/angular/material.git"
+  }
+}

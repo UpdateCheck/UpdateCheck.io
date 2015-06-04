@@ -1,0 +1,56 @@
+{
+  "css": {
+    "sass": {
+      "src": [
+        "resources/assets/stylesheets/app.scss"
+      ],
+      "vendorSrc": [
+        "resources/assets/stylesheets/vendor.scss"
+      ]
+    },
+    "autoprefixerConfig": {
+      "browsers": ["> 5% in GB"],
+      "cascade": true
+    },
+    "dest": "public/builds"
+  },
+  "fonts": {
+    "src": [
+      "bower_components/font-awesome/fonts/**/*"
+    ],
+    "dest": "public/fonts"
+  },
+  "angular": {
+    "templates": {
+      "src": [
+        "resources/assets/templates/**/*.html"
+      ],
+      "dest": "public/builds",
+      "params": {
+        "module": "app",
+        "root": "templates"
+      }
+    }
+  },
+  "js": {
+    "es6": {
+      "src": [
+        "resources/assets/scripts/**/*.js"
+      ],
+      "dest": "public/builds",
+      "concat": "app.js"
+    },
+    "es5": {
+      "vendorSrc": [
+        "bower_components/angular/angular.js",
+        "bower_components/angular-aria/angular-aria.js",
+        "bower_components/angular-animate/angular-animate.js",
+        "bower_components/angular-i18n/angular-locale_en-gb.js",
+        "bower_components/angular-material/angular-material.js",
+        "bower_components/ui-router/release/angular-ui-router.js"
+      ],
+      "dest": "public/builds",
+      "concat": "vendor.js"
+    }
+  }
+}
