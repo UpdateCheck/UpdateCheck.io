@@ -1,0 +1,21 @@
+<header ng-controller="HeaderController as vm">
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>
+                    <span>UpdateCheck.io</span>
+                </h2>
+                <span flex></span>
+
+                <div ng-if="!vm.user">
+                    <md-button ng-click="vm.login($event)">{{ 'LOGIN' | translate }}</md-button>
+                    <md-button ng-click="vm.register($event)" class="md-raised">{{ 'REGISTER' | translate }}</md-button>
+                </div>
+                <div ng-if="vm.user">
+                    <span>Welcome, {{ vm.user.first_name }}!</span>
+                    <md-button ng-click="vm.logout($event)" class="md-raised">{{ 'LOGOUT' | translate }}</md-button>
+                </div>
+            </div>
+        </md-toolbar>
+    </md-content>
+</header>

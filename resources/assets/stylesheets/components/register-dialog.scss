@@ -1,0 +1,31 @@
+///*.register-form.ng-hide,
+//.register-complete.ng-show {
+//  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+//}
+//
+//.register-form.ng-hide {
+//  height: 0;
+//  width: 0;
+//}*/
+//
+//.register-complete {
+//  margin: 0 auto;
+//  text-align: center;
+//  overflow: hidden;
+//  animation: animateIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+//}
+//
+//@keyframes animateIn {
+//  from {
+//    height: 0;
+//    width: 0;
+//  }
+//  to {
+//    height: 100%;
+//    width: 100%;
+//  }
+//}
+
+.register-dialog md-tabs-canvas {
+  display: none;
+}

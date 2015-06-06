@@ -1,0 +1,14 @@
+{
+  "REGISTER": "Sign Up",
+  "LOGIN": "Log In",
+  "LOGOUT": "Log Out",
+  "REGISTRATION": "Registration",
+  "FIRST_NAME": "First name",
+  "LAST_NAME": "Last name",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "PASSWORD_CONFIRM": "Password Confirmation",
+  "CREATE_ACCOUNT": "Create Account",
+  "REGISTRATION_COMPLETE": "Congratulations, You're Registered!",
+  "REGISTRATION_COMPLETE_TEXT": "You will soon receive a confirmation email in your inbox, if you don't see it try checking your junk/spam folder."
+}

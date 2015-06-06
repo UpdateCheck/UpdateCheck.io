@@ -11,23 +11,7 @@
               rel="stylesheet">
     </head>
     <body>
-        <header>
-            <md-content>
-                <md-toolbar>
-                    <div class="md-toolbar-tools">
-                        <md-icon md-svg-src="/img/logo_clear.svg" alt="Logo"></md-icon>
-                        <h2>
-                            <span>UpdateCheck.io</span>
-                        </h2>
-                        <span flex></span>
-                        <md-button class="md-icon-button" aria-label="Login">
-                            <md-icon md-font-library="material-icons">person</md-icon>
-                        </md-button>
-                    </div>
-                </md-toolbar>
-            </md-content>
-        </header>
-
+        <ng-include src="'templates/layout/header.html'"></ng-include>
 
         <main ui-view>
 

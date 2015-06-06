@@ -1,0 +1,28 @@
+<md-dialog aria-label="Login (Dialog)">
+    <form>
+        <md-dialog-content class="container" layout-padding layout="column">
+            <div>
+                <md-subheader class="md-sticky-no-effect">{{ 'LOGIN' | translate }}</md-subheader>
+                <div layout layout-sm="row">
+                    <md-input-container flex>
+                        <label>{{ 'EMAIL' | translate }}</label>
+                        <input ng-model="user.email" type="email" required>
+                    </md-input-container>
+                </div>
+
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>{{ 'PASSWORD' | translate }}</label>
+                        <input ng-model="user.password" type="password" required>
+                    </md-input-container>
+                </div>
+            </div>
+
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <md-button ng-click="login(user)" class="md-primary">
+                {{ 'LOGIN' | translate }}
+            </md-button>
+        </div>
+    </form>
+</md-dialog>

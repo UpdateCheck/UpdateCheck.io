@@ -46,7 +46,11 @@
         "bower_components/angular-aria/angular-aria.js",
         "bower_components/angular-animate/angular-animate.js",
         "bower_components/angular-i18n/angular-locale_en-gb.js",
+        "bower_components/angular-locker/src/angular-locker.js",
         "bower_components/angular-material/angular-material.js",
+        "bower_components/angular-sanitize/angular-sanitize.js",
+        "bower_components/angular-translate/angular-translate.js",
+        "bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js",
         "bower_components/ui-router/release/angular-ui-router.js"
       ],
       "dest": "public/builds",

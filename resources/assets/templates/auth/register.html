@@ -1,0 +1,40 @@
+<md-dialog aria-label="Registration (Dialog)">
+    <form>
+        <md-dialog-content class="container" layout-padding layout="column">
+            <div>
+                <md-subheader class="md-sticky-no-effect">{{ 'Registration' | translate }}</md-subheader>
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>{{ 'FIRST_NAME' | translate }}</label>
+                        <input ng-model="user.firstName" required>
+                    </md-input-container>
+                    <md-input-container flex>
+                        <label>{{ 'LAST_NAME' | translate }}</label>
+                        <input ng-model="user.lastName" required>
+                    </md-input-container>
+                </div>
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>{{ 'PASSWORD' | translate }}</label>
+                        <input ng-model="user.password" type="password" required>
+                    </md-input-container>
+                    <md-input-container flex>
+                        <label>{{ 'PASSWORD_CONFIRM' | translate }}</label>
+                        <input ng-model="user.passwordConfirm" type="password" required>
+                    </md-input-container>
+                </div>
+                <div layout layout-sm="row">
+                    <md-input-container flex>
+                        <label>{{ 'EMAIL' | translate }}</label>
+                        <input ng-model="user.email" type="email" required>
+                    </md-input-container>
+                </div>
+            </div>
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <md-button ng-click="register(user)" class="md-primary">
+                {{ 'CREATE_ACCOUNT' | translate }}
+            </md-button>
+        </div>
+    </form>
+</md-dialog>

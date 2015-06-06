@@ -11,4 +11,12 @@
 |
 */
 
+Route::group(['prefix' => 'api'], function() {
+    Route::post('auth', 'UserController@auth');
+
+    Route::group(['prefix' => 'users'], function() {
+        Route::post('/', 'UserController@store');
+    });
+});
+
 Route::get('{any}', 'AppController@index')->where('any', '.*');

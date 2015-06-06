@@ -145,6 +145,12 @@ return [
 		'UpdateCheck\Providers\EventServiceProvider',
 		'UpdateCheck\Providers\RouteServiceProvider',
 
+		/*
+		 * 3rd Party Service Providers...
+		 */
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+		'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
+
 	],
 
 	/*
@@ -192,6 +198,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		/*
+		 * 3rd Party
+		 */
+		'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+		'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory'
 
 	],
 
