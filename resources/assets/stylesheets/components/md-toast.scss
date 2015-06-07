@@ -1,0 +1,7 @@
+md-toast.md-top {
+  top: 64px;
+
+  @media (min-width: 600px) {
+    top: 72px;
+  }
+}

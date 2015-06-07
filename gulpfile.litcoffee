@@ -100,8 +100,9 @@ Realtime Compilation
         gulp.watch('resources/assets/stylesheets/_base.scss', ['css', 'css:vendor'])
         gulp.watch('resources/assets/scripts/**/*.js', ['js'])
         gulp.watch('resources/assets/templates/**/*.html', ['copy:templates'])
-        gulp.watch('app/views/**').on 'change', livereload.changed
         gulp.watch('public/builds/**').on 'change', livereload.changed
+        gulp.watch('public/i18n/**').on 'change', livereload.changed
+        gulp.watch('resources/views/**').on 'change', livereload.changed
         gulp.watch('resources/assets/templates/**').on 'change', livereload.changed
 
 Build everything!

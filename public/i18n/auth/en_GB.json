@@ -10,5 +10,8 @@
   "PASSWORD_CONFIRM": "Password Confirmation",
   "CREATE_ACCOUNT": "Create Account",
   "REGISTRATION_COMPLETE": "Congratulations, You're Registered!",
-  "REGISTRATION_COMPLETE_TEXT": "You will soon receive a confirmation email in your inbox, if you don't see it try checking your junk/spam folder."
+  "REGISTRATION_COMPLETE_TEXT": "You will soon receive a confirmation email in your inbox, if you don't see it try checking your junk/spam folder.",
+  "SUCCESSFUL_LOGIN": "You've successfully logged in!",
+  "SUCCESSFUL_REGISTRATION": "You've successfully registered!",
+  "SUCCESSFUL_LOGOUT": "You're now logged out."
 }

@@ -6,20 +6,35 @@
         .controller('HeaderController', HeaderController);
 
 
-    function HeaderController($mdDialog, locker) {
+    function HeaderController($mdDialog, locker, $mdToast, $translate) {
         var vm = this;
 
-        vm.user     = locker.get('user');
+        vm.user     = null;
 
         vm.register = register;
         vm.login    = login;
         vm.logout   = logout;
 
+        init();
+
         ////////////////
+
+        function init() {
+            vm.user = locker.get('user');
+        }
 
         function logout() {
             vm.user = null;
             locker.pull('token', 'user');
+
+            $translate('SUCCESSFUL_LOGOUT').then(text => {
+                var toast = $mdToast.simple()
+                        .content(text)
+                        .position('top right')
+                    ;
+
+                $mdToast.show(toast);
+            });
         }
 
         function register(ev) {
@@ -50,12 +65,15 @@
 
                     function success(res) {
                         $mdDialog.hide();
-                        var toast = $mdToast.simple()
-                                .content('You\'ve successfully registered!')
-                                .position('top 60px right')
-                            ;
 
-                        $mdToast.show(toast);
+                        $translate('SUCCESSFUL_REGISTRATION').then(text => {
+                            var toast = $mdToast.simple()
+                                    .content(text)
+                                    .position('top right')
+                                ;
+
+                            $mdToast.show(toast);
+                        });
                     }
 
                 }
@@ -92,12 +110,18 @@
 
                         vm.user = res.data.user;
 
-                        var toast = $mdToast.simple()
-                                .content('You\'ve successfully logged in!')
-                                .position('top 60px right')
-                            ;
+                        $translate('WELCOME_USER', {
+                            firstName: vm.user.firstName
+                        });
 
-                        $mdToast.show(toast);
+                        $translate('SUCCESSFUL_LOGIN').then(text => {
+                            var toast = $mdToast.simple()
+                                    .content(text)
+                                    .position('top right')
+                                ;
+
+                            $mdToast.show(toast);
+                        });
                     }
 
                 }

@@ -15,6 +15,7 @@
         $locationProvider.html5Mode(true);
 
         $translatePartialLoaderProvider.addPart('auth');
+        $translatePartialLoaderProvider.addPart('header');
 
         $translateProvider
             .useLoader('$translatePartialLoader', {

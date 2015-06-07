@@ -12,7 +12,7 @@
                     <md-button ng-click="vm.register($event)" class="md-raised">{{ 'REGISTER' | translate }}</md-button>
                 </div>
                 <div ng-if="vm.user">
-                    <span>Welcome, {{ vm.user.first_name }}!</span>
+                    <span>{{ 'WELCOME_USER' | translate:vm.user }}!</span>
                     <md-button ng-click="vm.logout($event)" class="md-raised">{{ 'LOGOUT' | translate }}</md-button>
                 </div>
             </div>
